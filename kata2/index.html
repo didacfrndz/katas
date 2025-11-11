@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="boton" style="padding: 10px; background-color: blue;">div boton</div>
+    <div id="texto"></div>
+</body>
+<script>
+    const divBoton = document.querySelector(`#boton`);
+    const botonA = `<button id="botonA">Botón A</button>`;
+    const botonB = `<button id="botonB">Botón B</button>`;
+    const textoA = `<p>Has pulsado el botón A</p>`;
+    const textoB = `<p>Has pulsado el botón B</p>`;
+    
+    let turnoA = true;
+    divBoton.innerHTML = turnoA ? botonA : botonB;
+
+    const divTexto = document.querySelector(`#texto`);
+
+    divBoton.addEventListener("click", function() {
+        turnoA = !turnoA;
+        divBoton.innerHTML = turnoA ? botonA : botonB;
+        divTexto.innerHTML = turnoA ? textoB : textoA;
+    });
+</script>
+
+
+</html>
