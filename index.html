@@ -15,14 +15,41 @@
             margin: 10px 0;
             list-style: none;
         }
+        .terminados{
+            margin-bottom: 50px;
+            color: darkgreen;
+        }
+        .incompleto{
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;    
+            color: darkred;
+        }
+        
     </style>
 </head>
 <body>
     <h1>Acceso a las Katas</h1>
-    <ul>
-        <li><a href="kata1/index.html">Kata 1 - Calculadora básica y tabla de multiplicar</a></li>
-        <li><a href="kata2/index.html">Kata 2 - Intercambio de turno entre jugador A y jugador B</a></li>
-        <li><a href="kata3/tableroPreguntas.html">Kata 3 - Juego de Preguntas JS</a></li>
-        <li><a href="kata4/minijuegoTrivia.html">Kata 4 - Mini juego de Trivia</a></li>
+    <h2>Didac Fernandez</h2>
+    <div class="terminados">
+        <h3>Finalizados</h3>
+        <ul>
+            <li><a href="kata1/index.html">Kata 1 - Calculadora básica y tabla de multiplicar</a></li>
+            <li><a href="kata2/index.html">Kata 2 - Intercambio de turno entre jugador A y jugador B</a></li>
+            <li><a href="kata3/tableroPreguntas.html">Kata 3 - Juego de Preguntas JS</a></li>
+            <li><a href="kata4/minijuegoTrivia.html">Kata 4 - Mini juego de Trivia</a></li>
+        </ul>
+    </div>
+    <div class="incompleto">
+        <h3>Incompletos</h3>
+        <ul>
+            <li><a href="gestionIncidencias/index.html">Kata 5 - Gestion de incidencias</a></li>
+        </ul>
+    </div>
+
 </body>
 </html>
